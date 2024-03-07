@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帖子详情页面</title>
+    <link rel="stylesheet" href="第六版.css">
+
+</head>
+<body>
+
+        <!-- 页面的所有内容 -->
+     <div class="container">
+        <button id="close-btn" style="position: absolute; top: 10px; left: 10px;">关闭</button>
+
+        <div class="post-image">
+            <!-- 使用相对路径引用帖子图片 -->
+            <img src="/Users/miao1sang/it/it小组/images/Italy.png" alt="帖子图片">
+        </div>
+        <div class="post-details">
+            <div class="user-info">
+                <!-- 使用相对路径引用默认头像 -->
+                <img src="/Users/miao1sang/it/it小组/images/touxiang.png" alt="用户头像" class="avatar">
+                <span class="id">用户名</span>
+            </div>
+            <h1 class="title">帖子标题</h1>
+            <p class="text">帖子正文内容...</p>
+            <span class="published-date">发布日期:2024-02-22</span>
+            <hr class="comments-divider"> <!-- 在这里添加横线 -->
+            <span class="comment-count">评论数：2</span>
+            
+            <div class="comments-section">
+                <!-- 第一条评论 -->
+                <div class="comment">
+                    <!-- 使用默认头像 -->
+                    <img src="/Users/miao1sang/it/it小组/images/touxiang.png" alt="评论者头像" class="avatar comment-avatar">
+                    <div class="comment-content">
+                        <span class="comment-id">评论者ID：四喜凡子</span>
+                        <p class="comment-text">评论内容：我也想去意大利</p>
+                        <span class="comment-date">评论日期:2024-02-22</span>
+                    </div>
+                </div>
+                <!-- 第二条评论 -->
+                <div class="comment">
+                    <!-- 使用默认头像 -->
+                    <img src="/Users/miao1sang/it/it小组/images/huan.png" alt="评论者头像" class="avatar comment-avatar">
+                    <div class="comment-content">
+                        <span class="comment-id">评论者ID：胡安</span>
+                        <p class="comment-text">评论内容：太漂亮了</p>
+                        <span class="comment-date">评论日期:2024-02-23</span>
+                    </div>
+                </div>
+                <!-- 更多评论 -->
+            </div>
+            
+            
+            <div class="interaction-bar">
+                <button class="comment-button">点击以发布评论</button>
+               <!-- 互动按钮 -->
+<div class="actions">
+    <span class="like">❤️ 喜欢 <span id="like-count">22</span></span>
+    <span class="save">💾 收藏 <span id="save-count">15</span></span>
+    <span class="comments">💬 评论 <span id="comment-count">2</span></span>
+</div>
+<!-- 模态框结构 -->
+<div id="myModal" class="modal">
+    <!-- 模态框内容 -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>请输入您的评论：</p>
+      <textarea id="commentInput" placeholder="在这里写下您的评论..."></textarea>
+      <button id="submitComment">提交评论</button>
+    </div>
+  </div>
+  
+            </div>
+        </div>
+    </div>
+
+    <script src="/Users/miao1sang/it/it小组/第六版.js"></script>
+
+</body>
+</html>
